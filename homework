@@ -1,0 +1,18 @@
+static void searchSummaries(ArrayList<BibleBook> theBooks)
+{
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter a search term: ");
+	String term = input.nextLine();
+	//python: for aBook in theBooks
+	for(BibleBook aBook : theBooks)
+	catch(Exception e)
+	{
+		if(aBook.searchSummary(term))
+		{
+			System.out.println(aBook.getName());
+			break;
+		}
+		System.out.println("No Book Found");
+	}
+
+}
